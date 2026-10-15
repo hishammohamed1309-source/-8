@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+header {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+}
+
+.logo b {
+    font-size: 24px;
+    color: #1e6f5c;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #6b7280;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #1e6f5c;
+}
+
+
+main {
+    margin-top: 100px;
+    padding: 50px 5%;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.left-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.left-section h1 {
+    font-size: 42px;
+    color: #1f2937;
+    margin-bottom: 20px;
+}
+
+.left-section h1 em {
+    color: #1e6f5c;
+    font-style: normal;
+}
+
+.left-section p {
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-primary {
+    background-color: #1e6f5c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #1e6f5c;
+    border: 2px solid #1e6f5c;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hero-icon {
+    font-size: 140px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+}
+
+
+.section {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.section.bg-light {
+    background-color: #ffffff;
+}
+
+.section h2 {
+    font-size: 32px;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.section-desc {
+    font-size: 16px;
+    color: #6b7280;
+    margin-bottom: 40px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    text-align: right;
+}
+
+
+.card {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border: 1px solid #e5e7eb;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #6b7280;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e6f5c;
+}
+
+
+.about-content {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #4b5563;
+    line-height: 1.8;
+}
+
+
+.pricing-card {
+    text-align: center;
+}
+
+.price-val {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d97706;
+    margin: 15px 0;
+}
+
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: right;
+}
+
+.faq-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+.faq-item p {
+    font-size: 15px;
+    color: #6b7280;
+}
+
+
+.contact-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+}
+
+.contact-box p {
+    font-size: 18px;
+    color: #4b5563;
+    margin: 10px 0;
+}
+
+
+footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 40px;
+}
